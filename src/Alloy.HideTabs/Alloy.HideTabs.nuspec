@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Alloy.HideTabs.NetCore</id>
+    <version>$PackageVersion$</version>
+    <title>Alloy.HideTabs</title>
+    <authors>Grzegorz Wiecheć</authors>
+    <owners>Grzegorz Wiecheć</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Allow to hide tab and properties based on conditions</description>
+    <releaseNotes/>
+    <copyright>Copyright 2022</copyright>
+    <tags>episerver optimizely</tags>
+    <license type="expression">MIT</license>
+    <projectUrl>https://nuget.optimizely.com/package/?id=Alloy.HideTabs</projectUrl>
+    <dependencies>
+      <group targetFramework="net5.0">
+        <dependency id="EPiServer.CMS.UI.Core" version="[$CmsUIVersion$, $CmsUINextMajorVersion$)" />
+        <dependency id="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" version="[$RuntimeVersion$, $RuntimeNextMajorVersion$)" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/any/modules/_protected/alloy-hideTabs/alloy-hideTabs.zip" buildAction="None" copyToOutput="true"  />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="src\Alloy.HideTabs\bin\$configuration$\Alloy.HideTabs.dll" target="lib\net5.0\" />
+
+    <file src="out\alloy-hideTabs\alloy-hideTabs.zip" target="contentFiles\any\any\modules\_protected\alloy-hideTabs\" />
+
+    <file src="build\CopyZipFiles.targets" target="build\net5.0\Alloy.HideTabs.targets" />
+    <file src="src\Alloy.HideTabs\readme.txt" target="" />
+  </files>
+</package>

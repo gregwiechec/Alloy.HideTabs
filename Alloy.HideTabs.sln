@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alloy.Sample", "src\Alloy.Sample\Alloy.Sample.csproj", "{12F4D91E-D45A-4DD3-9DF0-E8483A24AA74}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{A1272902-1CD0-4507-9714-CB3AE96E78FD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alloy.HideTabs", "src\Alloy.HideTabs\Alloy.HideTabs.csproj", "{4DAAB61B-7BB2-4A40-B00A-E95D0C793DCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12F4D91E-D45A-4DD3-9DF0-E8483A24AA74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12F4D91E-D45A-4DD3-9DF0-E8483A24AA74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12F4D91E-D45A-4DD3-9DF0-E8483A24AA74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12F4D91E-D45A-4DD3-9DF0-E8483A24AA74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DAAB61B-7BB2-4A40-B00A-E95D0C793DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DAAB61B-7BB2-4A40-B00A-E95D0C793DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DAAB61B-7BB2-4A40-B00A-E95D0C793DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DAAB61B-7BB2-4A40-B00A-E95D0C793DCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE6975A1-0DED-4587-99EA-E67D4417C90E}
+	EndGlobalSection
+EndGlobal

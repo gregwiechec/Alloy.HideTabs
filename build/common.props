@@ -1,0 +1,17 @@
+<Project>
+    <Import Project="version.props" />
+    <PropertyGroup>
+        <Product Condition=" '$(Product)' == '' ">Alloy.HideTabs</Product>
+        <Company>Grzegorz Wiechec</Company>
+        <Authors>Grzegorz Wiechec</Authors>
+        <Copyright>© 2019-2022 Grzegorz Wiechec</Copyright>
+        <PackageProjectUrl>https://github.com/gregwiechec</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/gregwiechec/Alloy.HideTabs/blob/master/LICENSE</PackageLicenseUrl>
+        <PackageTags>external links episerver</PackageTags>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+        <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+        <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    </PropertyGroup>
+</Project>
