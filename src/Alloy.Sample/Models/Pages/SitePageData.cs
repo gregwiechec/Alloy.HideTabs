@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Alloy.Sample.Business.Rendering;
 using EPiServer.Core;
@@ -50,6 +50,7 @@ namespace Alloy.Sample.Models.Pages
             GroupName = Global.GroupNames.MetaData,
             Order = 400)]
         [CultureSpecific]
+        [ShowPropertyWhenValueEquals(nameof(MetaDescription), true)]
         public virtual bool DisableIndexing { get; set; }
 
         [Display(
