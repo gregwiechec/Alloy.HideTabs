@@ -38,7 +38,7 @@ define([
         },
 
         _getRestPath: function (name) {
-            return routes.getRestPath({ moduleArea: "alloy.hideTabs", storeName: name });
+            return routes.getRestPath({ moduleArea: "alloy-hideTabs", storeName: name });
         }
     });
 });
