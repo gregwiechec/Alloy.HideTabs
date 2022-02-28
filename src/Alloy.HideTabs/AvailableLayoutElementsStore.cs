@@ -2,6 +2,7 @@
 using EPiServer;
 using EPiServer.Core;
 using EPiServer.Shell.Services.Rest;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Alloy.HideTabs
 {

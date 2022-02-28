@@ -1,9 +1,7 @@
 ﻿using EPiServer.Cms.Shell.UI.UIDescriptors.ViewConfigurations.Internal;
-using EPiServer.Core;
 using EPiServer.Framework;
 using EPiServer.Framework.Initialization;
 using EPiServer.ServiceLocation;
-using EPiServer.Shell;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace AlloyTemplates.ExtendedSettings

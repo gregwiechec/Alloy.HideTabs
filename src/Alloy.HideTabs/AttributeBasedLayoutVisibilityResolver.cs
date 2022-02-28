@@ -21,21 +21,19 @@ namespace Alloy.HideTabs.LayoutVisibilityResolver
                 var attributes = property.GetCustomAttributes();
                 foreach (var attribute in attributes.OfType<TabVisibilityAttributeBase>())
                 {
-                    if (attribute is ShowTabWhenPropertyEqualsAttribute)
+                    if (attribute is ShowTabWhenPropertyEqualsAttribute showAttr)
                     {
-                        var attr = (ShowTabWhenPropertyEqualsAttribute)attribute;
-                        if (attr.Value.Equals(content.Property[property.Name].Value) == false)
+                        if (showAttr.Value.Equals(content.Property[property.Name].Value) == false)
                         {
-                            result.Add(attr.TabName);
+                            result.Add(showAttr.TabName);
                         }
                         continue;
                     }
-                    if (attribute is HideTabWhenPropertyEqualsAttribute)
+                    if (attribute is HideTabWhenPropertyEqualsAttribute hideAttr)
                     {
-                        var attr = (HideTabWhenPropertyEqualsAttribute)attribute;
-                        if (attr.Value.Equals(content.Property[property.Name].Value) == true)
+                        if (hideAttr.Value.Equals(content.Property[property.Name].Value) == true)
                         {
-                            result.Add(attr.TabName);
+                            result.Add(hideAttr.TabName);
                         }
                     }
                 }
@@ -54,21 +52,19 @@ namespace Alloy.HideTabs.LayoutVisibilityResolver
                 var attributes = property.GetCustomAttributes();
                 foreach (var attribute in attributes.OfType<PropertyVisibilityAttributeBase>())
                 {
-                    if (attribute is ShowPropertyWhenValueEqualsAttribute)
+                    if (attribute is ShowPropertyWhenValueEqualsAttribute showAttr)
                     {
-                        var attr = (ShowPropertyWhenValueEqualsAttribute)attribute;
-                        if (attr.Value.Equals(content.Property[property.Name].Value) == false)
+                        if (showAttr.Value.Equals(content.Property[property.Name].Value) == false)
                         {
-                            result.Add(attr.PropertyName);
+                            result.Add(showAttr.PropertyName);
                         }
                         continue;
                     }
-                    if (attribute is HidePropertyWhenValueEquals)
+                    if (attribute is HidePropertyWhenValueEquals hideAttr)
                     {
-                        var attr = (HidePropertyWhenValueEquals)attribute;
-                        if (attr.Value.Equals(content.Property[property.Name].Value) == true)
+                        if (hideAttr.Value.Equals(content.Property[property.Name].Value) == true)
                         {
-                            result.Add(attr.PropertyName);
+                            result.Add(hideAttr.PropertyName);
                         }
                     }
                 }

@@ -6,7 +6,7 @@ using EPiServer;
 using EPiServer.Core;
 using EPiServer.ServiceLocation;
 
-namespace AlloyTemplates.Business
+namespace Alloy.Sample.Business
 {
     [ServiceConfiguration(typeof(ILayoutVisibilityResolver))]
     public class DefaultLayoutVisibilityResolver : ILayoutVisibilityResolver
