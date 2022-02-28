@@ -2,6 +2,9 @@
 using System.ComponentModel.DataAnnotations;
 using Alloy.HideTabs;
 using Alloy.HideTabs.VisibilityAttributes;
+using Alloy.Sample;
+using Alloy.Sample.Models;
+using Alloy.Sample.Models.Pages;
 using EPiServer;
 using EPiServer.Cms.Shell.UI.ObjectEditing.EditorDescriptors.SelectionFactories;
 using EPiServer.Core;

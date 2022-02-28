@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Alloy.HideTabs.VisibilityAttributes;
 using Alloy.Sample.Business.Rendering;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;

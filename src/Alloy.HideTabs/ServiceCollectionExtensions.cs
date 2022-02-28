@@ -22,4 +22,4 @@ namespace Alloy.HideTabs
         }
     }
 }
-https://github.com/gregwiechec/alloy-mvc-template/compare/master...gregwiechec:hide-tabs
+//https://github.com/gregwiechec/alloy-mvc-template/compare/master...gregwiechec:hide-tabs

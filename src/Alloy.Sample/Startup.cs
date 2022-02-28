@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using Alloy.HideTabs;
 using Alloy.Sample.Extensions;
 using Alloy.Sample.Infrastructure;
 using EPiServer.Cms.Shell;
@@ -67,7 +68,7 @@ namespace Alloy.Sample
 
             services.AddEmbeddedLocalization<Startup>();
 
-            services.AddAlloyHideTabs();
+            //services.AddAlloyHideTabs();
         }
 
 
