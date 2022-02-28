@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Alloy.Sample.Models.Blocks;
+using AlloyTemplates.Models.Pages;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
@@ -16,7 +17,7 @@ namespace Alloy.Sample.Models.Pages
     [SiteImageUrl]
     [AvailableContentTypes(
         Availability.Specific,
-        Include = new[] { typeof(ContainerPage), typeof(ProductPage), typeof(StandardPage), typeof(ISearchPage), typeof(LandingPage), typeof(ContentFolder) }, // Pages we can create under the start page...
+        Include = new[] { typeof(ContainerPage), typeof(ProductPage), typeof(StandardPage), typeof(ISearchPage), typeof(LandingPage), typeof(ContentFolder), typeof(BlogPostPage) }, // Pages we can create under the start page...
         ExcludeOn = new[] { typeof(ContainerPage), typeof(ProductPage), typeof(StandardPage), typeof(ISearchPage), typeof(LandingPage) })] // ...and underneath those we can't create additional start pages
     public class StartPage : SitePageData
     {
