@@ -68,7 +68,7 @@ namespace Alloy.Sample
 
             services.AddEmbeddedLocalization<Startup>();
 
-            //services.AddAlloyHideTabs();
+            services.AddAlloyHideTabs();
         }
 
 
