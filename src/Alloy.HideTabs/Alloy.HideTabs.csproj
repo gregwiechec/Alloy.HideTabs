@@ -3,6 +3,7 @@
   <Import Project="..\..\build\nuspec.props" />
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <IsPackable>true</IsPackable>
     <OutputType>Library</OutputType>
     <NuspecFile>Alloy.HideTabs.nuspec</NuspecFile>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
