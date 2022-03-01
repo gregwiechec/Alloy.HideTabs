@@ -10,7 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="EPiServer.CMS.AspNetCore.Templating" Version="12.3.0" />
-    <PackageReference Include="EPiServer.CMS.UI.Core" Version="12.3.1" />
+    <PackageReference Include="EPiServer.CMS.UI.Core" Version="12.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" />
   </ItemGroup>
   <ItemGroup>
