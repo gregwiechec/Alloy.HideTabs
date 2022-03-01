@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Alloy.HideTabs
+namespace Alloy.HideTabs.VisibilityAttributes
 {
     /// <summary>
     /// Use this attribute to force tab visibility refresh

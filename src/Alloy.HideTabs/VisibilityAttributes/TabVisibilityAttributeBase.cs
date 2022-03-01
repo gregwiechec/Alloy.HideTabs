@@ -2,6 +2,9 @@
 
 namespace Alloy.HideTabs.VisibilityAttributes
 {
+    /// <summary>
+    /// Base class for tab visibility attributes
+    /// </summary>
     public abstract class TabVisibilityAttributeBase : Attribute, ILayoutElementVisibilityAttribute
     {
         public string TabName { get; set; }
