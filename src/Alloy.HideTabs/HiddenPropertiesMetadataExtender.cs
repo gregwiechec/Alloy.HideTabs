@@ -21,8 +21,7 @@ namespace Alloy.HideTabs
 
         public void ModifyMetadata(ExtendedMetadata metadata, IEnumerable<Attribute> attributes)
         {
-            var content = metadata.Model as IContent;
-            if (content == null)
+            if (!(metadata.Model is IContent content))
             {
                 return;
             }

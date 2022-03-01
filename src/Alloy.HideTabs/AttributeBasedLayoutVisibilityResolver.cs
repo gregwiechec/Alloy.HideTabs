@@ -6,7 +6,7 @@ using EPiServer;
 using EPiServer.Core;
 using EPiServer.ServiceLocation;
 
-namespace Alloy.HideTabs.LayoutVisibilityResolver
+namespace Alloy.HideTabs
 {
     [ServiceConfiguration(typeof(ILayoutVisibilityResolver))]
     public class AttributeBasedLayoutVisibilityResolver : ILayoutVisibilityResolver

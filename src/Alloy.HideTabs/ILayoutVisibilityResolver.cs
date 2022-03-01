@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using EPiServer.Core;
 
-namespace Alloy.HideTabs.LayoutVisibilityResolver
+namespace Alloy.HideTabs
 {
     public interface ILayoutVisibilityResolver
     {

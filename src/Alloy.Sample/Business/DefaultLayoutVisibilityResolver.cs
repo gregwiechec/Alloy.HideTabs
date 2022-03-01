@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Alloy.HideTabs.LayoutVisibilityResolver;
+using Alloy.HideTabs;
 using AlloyTemplates.Models.Pages;
 using EPiServer;
 using EPiServer.Core;
@@ -8,6 +8,10 @@ using EPiServer.ServiceLocation;
 
 namespace Alloy.Sample.Business
 {
+    /// <summary>
+    /// Sample implementation of <see cref="ILayoutVisibilityResolver"/> interface
+    /// that hide BlogPost page tabs based on conditions
+    /// </summary>
     [ServiceConfiguration(typeof(ILayoutVisibilityResolver))]
     public class DefaultLayoutVisibilityResolver : ILayoutVisibilityResolver
     {

@@ -4,8 +4,11 @@ using EPiServer.Framework.Initialization;
 using EPiServer.ServiceLocation;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace AlloyTemplates.ExtendedSettings
+namespace Alloy.HideTabs
 {
+    /// <summary>
+    /// Module that overrides default form editing view
+    /// </summary>
     [ModuleDependency(typeof(EPiServer.Web.InitializationModule))]
     public class CustomOnPageEditInitializer : IConfigurableModule
     {
