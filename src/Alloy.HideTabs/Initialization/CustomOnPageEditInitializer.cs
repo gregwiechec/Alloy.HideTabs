@@ -4,7 +4,7 @@ using EPiServer.Framework.Initialization;
 using EPiServer.ServiceLocation;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Alloy.HideTabs
+namespace Alloy.HideTabs.Initialization
 {
     /// <summary>
     /// Module that overrides default form editing view
