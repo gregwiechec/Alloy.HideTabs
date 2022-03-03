@@ -1,3 +1,12 @@
+To use plugin, you need to add
+
+services.AddAlloyHideTabs();
+
+in Startup.ConfigureServices method
+
+
+
+
 Use ShowTabWhenPropertyEquals and HideTabWhenPropertyEquals attributes to show Tabs.
 Use ShowPropertyWhenValueEquals and HidePropertyWhenValueEquals attributes to show properties.
 
