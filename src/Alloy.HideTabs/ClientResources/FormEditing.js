@@ -126,10 +126,16 @@ define([
             _hideProperties: function (hiddenProperties) {
                 hiddenProperties = hiddenProperties.map(function (x) { return x.toLowerCase(); });
 
-                for (var propertyName in this._formWidgets) {
-                    var propertyIsHidden = hiddenProperties.indexOf(propertyName.toLowerCase()) !== -1;
-                    domClass.toggle(this._formWidgets[propertyName].getParent().domNode, "dijitHidden", propertyIsHidden);
-                }
+                Object.getOwnPropertyNames(this._formWidgets).forEach((propertyName) => {
+                    var widget = this._formWidgets[propertyName];
+                    if (widget && widget.getParent && widget.getParent()) {
+                        var parent = widget.getParent();
+                        if (parent.domNode) {
+                            var propertyIsHidden = hiddenProperties.indexOf(propertyName.toLowerCase()) !== -1;
+                            domClass.toggle(parent.domNode, "dijitHidden", propertyIsHidden);
+                        }
+                    }
+                });
             },
 
             _isTopPanel: function (groupName) {
